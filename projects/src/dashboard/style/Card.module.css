@@ -1,0 +1,79 @@
+.card {
+    overflow: hidden;
+    box-shadow: 0 0px 7px 0px rgba(0, 0, 0, 0.3);
+    margin: 8px;
+    background-color: white;
+    
+}
+
+.cardTop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topRight {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.topRight h2 {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topRight ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+
+
+.cardBody {
+    padding: 15px;
+    
+}
+
+.cardBody ul {
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.cardFooter {
+
+    padding: 8px;
+}
+
+.footerButtom {
+    padding: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footerButtom  p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footerButtom  p span {
+    font-size: 16px;
+}
+
+.showPlus ul li {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.showPlus {
+    padding: 10px;
+}

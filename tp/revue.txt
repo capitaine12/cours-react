@@ -1,0 +1,87 @@
+import './UserCard.css'; // 🔹 Le CSS est séparé
+
+export default function UserCard({ user }) {
+  // 🔸 Choix de la classe CSS selon le sexe
+  const cardClass = user.sexe === 'f' ? 'card femme' : 'card homme';
+
+  // 🔸 On extrait le JSX dans une fonction pour la clarté
+  function renderUserInfo() {
+    return (
+      <>
+        <div className="card-img">
+          <img
+            src={user.imgUrl}
+            alt={`${user.prenom} ${user.nom}`}
+            style={{
+              width: user.imgSize,
+              height: user.imgSize,
+              borderRadius: '50%',
+            }}
+          />
+        </div>
+
+        <div className="card-body">
+          <h2>{user.prenom} {user.nom}</h2>
+          <span className="profil">{user.profile}</span>
+          <p className="desc">{user.description}</p>
+        </div>
+      </>
+    );
+  }
+
+  // 🔸 Le return final de la carte
+  return (
+    <div className={cardClass}>
+      {renderUserInfo()}
+    </div>
+  );
+}
+
+
+.card {
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card.femme {
+  border-left: 5px solid pink;
+}
+
+.card.homme {
+  border-left: 5px solid blue;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card-body h2 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+.profil {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  text-align: center;
+}
+
+.desc {
+  font-size: 13px;
+  color: #444;
+  text-align: justify;
+  margin-top: 10px;
+}

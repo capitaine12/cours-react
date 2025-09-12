@@ -1,0 +1,13 @@
+.form-table {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+
+.formulaire {
+    width: 30%;
+}
+
+.out-table {
+    width: 70%;
+}

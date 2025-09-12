@@ -1,0 +1,44 @@
+.custom-button {
+    width: 90px;
+    padding: 5px;
+    border: solid 2px white;
+    background: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-button:hover:not(:disabled) {
+    background: #fff;
+    color: #31b572;
+}
+
+.ouvrir-button {
+    background: #31b572;
+    cursor: pointer;
+    height: 31px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.ouvrir-button:hover {
+    border: 2px solid #31b572;
+}
+
+.sect-cat select {
+    width: 25%;
+    padding: 7px;
+    margin-top: 12px;
+    border-radius: 17px;
+    border: 2px solid #00b878;
+    outline: none;
+}
+
+.btn-submite:disabled {
+  background-color: #f0e6e6;
+  cursor: not-allowed;
+}

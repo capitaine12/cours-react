@@ -1,0 +1,85 @@
+.cLink {
+    text-decoration: none;
+    width: min-content;
+    display: block;
+    border-radius: 23px;
+
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 198px;
+    height: 300px;
+    border-radius: 23px;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+
+
+}
+
+.ctop {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+
+}
+
+.diffTag {
+
+   width: 40px;
+  height: 36px;
+  position: relative;
+  top: -13px;
+  left: 5px;
+  clip-path: polygon(0 0, 80% 0, 80% 70%, 50% 100%, 20% 70%, 20% 0);
+
+}
+
+.ctop svg {
+    background: #ffffffc4;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 13px;
+    backdrop-filter: blur(7px);
+    color: red;
+}
+
+.cbody {
+    padding: 3px;
+    min-width: min-content;
+}
+
+.cbody h2 {
+    text-align: center;
+    font-size: clamp(26px, 4vw, 33px);
+    font-family: "Style Script";
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    /*  -webkit-text-stroke: 1px white; */
+
+}
+
+.cbottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.639);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.cbottom span {
+    display: flex;
+}

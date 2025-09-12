@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 5px 11px -6px blue;
+    margin-bottom: 8px;
+   
+    
+}
+
+.header .logo {
+    font: bold ;
+    font-family: Arial;
+    color: blue;
+    
+}
+
+.nav-link .item {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: "Fira Sans";
+    padding: 5px;
+}
+
+.item:hover {
+    color: blue;
+    transition: ease 0.3s;
+    text-underline-offset: 3px;
+    text-decoration: underline;
+}
+
+a.active {
+  color: rgb(47, 0, 255);
+}
+a.pending {
+  color: rgb(11, 11, 12);
+}
+a.transitioning {
+  view-transition-name: my-transition;
+}

@@ -1,0 +1,90 @@
+[⚠️ Suspicious Content] Mise à jour simple vs complexe
+✅ Mise à jour simple :
+js
+Copier
+Modifier
+const [count, setCount] = useState(0);
+setCount(count + 1);
+⚠️ Mise à jour en fonction de l’ancienne valeur :
+js
+Copier
+Modifier
+setCount(prev => prev + 1);
+💡 C’est obligatoire si tu fais plusieurs mises à jour à la suite, sinon React peut utiliser une valeur dépassée.
+
+4️⃣ Changer un objet ou un tableau
+React ne fusionne pas automatiquement les objets comme setState() le faisait en class components.
+
+🧩 Exemple avec objet :
+js
+Copier
+Modifier
+const [user, setUser] = useState({ nom: "Ali", age: 20 });
+
+setUser({ ...user, age: 21 }); // ✅ on garde le reste avec spread (...)
+📚 Exemple avec tableau :
+js
+Copier
+Modifier
+const [tasks, setTasks] = useState([]);
+
+setTasks([...tasks, nouvelleTâche]); // ✅ on garde les anciennes
+5️⃣ Plusieurs useState dans un même composant ? OUI ✅
+Tu peux en utiliser autant que nécessaire.
+
+js
+Copier
+Modifier
+const [nom, setNom] = useState("");
+const [age, setAge] = useState(0);
+const [visible, setVisible] = useState(true);
+Astuce : préfère séparer les états simples (clarté, débogage, etc.)
+
+6️⃣ useState + champs de formulaire contrôlés
+C’est ce qui permet à React de "contrôler" les champs en fonction de l’état.
+
+jsx
+Copier
+Modifier
+const [nom, setNom] = useState("");
+
+<input value={nom} onChange={e => setNom(e.target.value)} />
+Tu peux ainsi afficher ce que l’utilisateur écrit, valider, bloquer, etc.
+
+7️⃣ Attention à la mise à jour asynchrone
+Les appels setX() sont asynchrones → la valeur n’est pas immédiatement mise à jour.
+
+js
+Copier
+Modifier
+setCompteur(compteur + 1);
+console.log(compteur); // ❌ ancienne valeur
+➡️ Utilise la version fonctionnelle pour être sûr :
+
+js
+Copier
+Modifier
+setCompteur(prev => prev + 1);
+8️⃣ Réinitialiser une valeur
+js
+Copier
+Modifier
+setNom(""); // Vide le champ texte
+setUser(null); // Supprime les données d’un user
+9️⃣ Eviter les pièges courants
+Mauvaise pratique	Correction
+useState({}) puis set sans spread	setUser({ ...user, age: 20 })
+Modifier directement le tableau	setList([...list])
+Lire la valeur juste après setX()	Utilise useEffect ou prev =>
+
+1️⃣0️⃣ Bonus : Déclenche une action quand l’état change ?
+Tu ne peux pas faire ça directement avec setState()
+👉 Tu utiliseras useEffect() (tu verras ça dans le prochain niveau).
+
+✅ En résumé
+Tu veux…	Tu fais
+Afficher/masquer une div ?	useState(true) + isVisible && <div>
+Ajouter un élément dans une liste ?	setList([...list, newItem])
+Modifier une propriété d’un objet ?	setData({ ...data, champ: valeur })
+Suivre le texte dans un champ input ?	useState("") + onChange={...}
+

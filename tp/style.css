@@ -1,0 +1,90 @@
+:root {
+    --color-vert: #008000;
+    --color-jaune: #FFD700;
+    --color-rouge: #FF0000;
+    --background: #272a36;
+    --text-color: #FFFFFF;
+    --padding: 10px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+main {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.drapeau {
+    display: flex;
+    border: 2px solid var(--text-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.colonne {
+    width: 100px;
+    height: 200px;
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vert {
+    background-color: var(--color-vert);
+}
+
+.jaune {
+    background-color: var(--color-jaune);
+}
+
+.rouge {
+    background-color: var(--color-rouge);
+}
+
+.etoile {
+    fill: var(--color-vert);
+    transition: transform 0.3s ease;
+}
+
+.etoile:hover {
+    transform: scale(1.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    height: 50vh;
+
+caption-side: bottom;
+
+td, th {
+
+    border: 1px solid white;
+
+    }
+}

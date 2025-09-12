@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 67%;
+  padding: 8px;
+  background-color: bisque;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.diffTag {
+
+  width: 30px;
+  height: 23px;
+  position: relative;
+  top: -13px;
+  left: 5px;
+  clip-path: polygon(0 0, 80% 0, 80% 70%, 50% 100%, 20% 70%, 20% 0);
+
+}
+
+.boxDifficult {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  
+}
+
+.legende {
+
+  display: flex;
+}
+
+.legende span {
+  cursor: pointer;
+}
+
+
+

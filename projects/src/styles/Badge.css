@@ -1,0 +1,22 @@
+.badge {
+    padding: 1px 10px;
+    border-radius: 20px; 
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-sucess {
+    background-color: rgb(14, 161, 14);
+    
+}
+.badge-info {
+    background-color: blue;
+  
+
+}
+.badge-danger {
+    background-color: red;
+   
+}
+

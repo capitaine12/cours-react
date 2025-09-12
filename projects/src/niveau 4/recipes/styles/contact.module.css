@@ -1,0 +1,87 @@
+
+.inputItems input,
+.inputItems textarea {
+    border: 3px solid rgb(255, 255, 0); 
+}
+
+.inputItems input {
+    width: 250px;
+}
+
+.cont {
+    font-family: "Style Script";
+    font-size: 4em;
+
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 0fr 0fr 1fr;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.gridSocial {
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    font-size: 30px;
+    color: white;
+
+
+}
+
+.gridSocial ul {
+    list-style: none;
+    background-color: rgb(225, 192, 0);
+    
+}
+
+
+.gridSocial ul li {
+    text-align: center;
+     padding: 2px;
+    border-bottom: 1px solid;
+
+    
+}
+
+.form {
+
+    width: 287px;
+    background-color: black;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    
+}
+
+.coordoner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coordoner ul{
+        padding: 12px;
+    line-height: 1.5;
+    height: 196px;
+    background: rgb(255, 192, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    list-style: none;
+}
+
+.coordoner ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

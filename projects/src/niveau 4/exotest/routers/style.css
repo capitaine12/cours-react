@@ -1,0 +1,10 @@
+a.notactive {
+    color: rgb(0, 0, 0);
+}
+
+a.active {
+
+    color: rgb(201, 9, 9);
+    
+}
+

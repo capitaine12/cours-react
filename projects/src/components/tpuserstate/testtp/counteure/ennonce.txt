@@ -1,0 +1,1 @@
+cet exercice consiste a créér un conteure en utilisant le lifting up (remonter l'etat des state)

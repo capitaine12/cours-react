@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kër Sécu – Éducation à la cybersécurité</title>
+    <style>
+        /* Reset basique */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #111827;
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3b82f6;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 1rem;
+            flex: 1 1 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #3b82f6;
+        }
+
+        .ai-box {
+            background-color: #e0f2fe;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media(max-width: 768px){
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Accueil -->
+    <header>
+        <h1>Kër Sécu</h1>
+        <p>Apprenez à vous protéger des cyberattaques grâce à des conseils pratiques et un coach IA</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#apropos">À propos</a>
+        <a href="#attaques">Attaques</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#ia">Coach IA</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section À propos / résumé + problème -->
+    <section id="apropos">
+        <h2>À propos du projet</h2>
+        <p>Kër Sécu est une plateforme éducative qui aide les utilisateurs à comprendre et se protéger des cyberattaques grâce à des conseils pratiques et un coach IA interactif.</p>
+        <p><strong>Problème :</strong> Beaucoup d’utilisateurs ne connaissent pas les bases de la cybersécurité, ce qui les expose aux phishing, mots de passe faibles et piratage de comptes.</p>
+    </section>
+
+    <!-- Section Types d’attaques -->
+    <section id="attaques">
+        <h2>Types d’attaques</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Phishing</h3>
+                <p>Exemple : un email semblant venir d’une banque.</p>
+            </div>
+            <div class="card">
+                <h3>Malware / Virus</h3>
+                <p>Exemple : logiciel malveillant téléchargé par erreur.</p>
+            </div>
+            <div class="card">
+                <h3>Ransomware</h3>
+                <p>Exemple : vos fichiers sont bloqués et demande de rançon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Solutions et bonnes pratiques -->
+    <section id="solutions">
+        <h2>Solutions et bonnes pratiques</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>À faire</h3>
+                <ul>
+                    <li>Vérifier l’expéditeur des emails</li>
+                    <li>Activer l’authentification à 2 facteurs</li>
+                    <li>Utiliser des mots de passe forts et uniques</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>À éviter</h3>
+                <ul>
+                    <li>Cliquer sur des liens inconnus</li>
+                    <li>Télécharger des fichiers non vérifiés</li>
+                    <li>Partager vos identifiants</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Solution IA / Coach IA -->
+    <section id="ia">
+        <h2>Coach IA</h2>
+        <p>Le coach IA aide l’utilisateur à mieux comprendre les bonnes pratiques en cybersécurité et fournit un feedback immédiat.</p>
+        <div class="ai-box">
+            <p><strong>Exemple de simulation :</strong></p>
+            <p>L’utilisateur tape son mot de passe → l’IA indique : Faible / Moyen / Fort + conseils.</p>
+            <p>Mini-question phishing → L’IA fournit un feedback immédiat.</p>
+        </div>
+    </section>
+
+    <!-- Section Impact & Cibles -->
+    <section id="impact">
+        <h2>Impact & Cibles</h2>
+        <p>Ce projet cible principalement les jeunes, les étudiants et les petites entreprises. Il vise à sensibiliser aux cyberattaques, prévenir les risques et créer une culture de cybersécurité.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label>Nom :</label><br>
+            <input type="text" placeholder="Votre nom"><br><br>
+            <label>Email :</label><br>
+            <input type="email" placeholder="Votre email"><br><br>
+            <label>Message :</label><br>
+            <textarea placeholder="Votre message"></textarea><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Kër Sécu - Tous droits réservés
+    </footer>
+
+</body>
+</html>

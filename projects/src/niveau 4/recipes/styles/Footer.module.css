@@ -1,0 +1,93 @@
+footer {
+
+    background-color: #0d0d0d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.social {
+
+    display: flex;
+    gap: 8px;
+}
+
+.social svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.social svg:hover {
+    color: rgb(255, 192, 0);
+}
+
+.fBody {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.liste a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.liste {
+    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+
+ 
+}
+
+.liste a:hover,
+ .liste li:hover,
+.sIcon:hover {
+    color: rgb(255, 192, 0);
+     text-decoration: underline 2px;
+     transition: ease 2ms;
+     text-underline-offset: 5px;
+
+}
+
+.liste span {
+    display: flex;
+  align-items: center;
+    gap: 5px;
+
+}
+
+
+.fBottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid;
+}
+
+.fBottom span {
+    
+    margin-right: 15px;
+}
+

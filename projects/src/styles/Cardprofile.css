@@ -1,0 +1,82 @@
+/* Conteneur principal */
+.contente {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* Carte individuelle */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image de profil */
+.card-imgurl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #fefefe;
+}
+
+.card-imgurl img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Informations */
+.card-info {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.card-info h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.card-info span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Description */
+.card-descri {
+  padding: 10px 15px 20px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+ 
+}
+
+.lady-card {
+  border-left: 5px solid rgb(211, 16, 107);
+}
+
+.man-card {
+  border-left: 5px solid rgb(5, 5, 168);
+}
+
+.card-footer {
+    padding: 10px 15px 20px;
+
+}
+
+
+.card-badge {
+  padding: 5px 10px;
+}
+

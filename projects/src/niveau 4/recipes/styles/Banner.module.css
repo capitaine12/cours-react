@@ -1,0 +1,40 @@
+.banner {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    padding: 10px;
+    border-radius: 0px 0px 106px 0px;
+
+    background: url("/src/niveau 4/recipes/images/bag.PNG") center center / cover no-repeat;
+    position: relative;
+    top: -65px;
+    z-index: 1;
+    
+}
+
+
+
+.bLeft strong h1 {
+    line-height: 0.5;
+}
+
+.bLeft strong {
+    font-size: 1.7rem;
+    position: relative;
+    top: 21px;
+    z-index: 1;
+}
+
+.bLeft h1 {
+    font-size: 5rem;
+}
+
+.bLeft>span {
+    float: right;
+background: #000000d6;
+  color: white;
+  padding: 3px;
+  font-weight: bolder;
+  /* border-radius: 11px; */
+}

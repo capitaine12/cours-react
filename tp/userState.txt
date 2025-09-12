@@ -1,0 +1,6 @@
+| Tu veux…                                | Tu fais                                 |
+| --------------------------------------- | --------------------------------------- |
+| Afficher/masquer une div ?              | `useState(true)` + `isVisible && <div>` |
+| Ajouter un élément dans une liste ?     | `setList([...list, newItem])`           |
+| Modifier une propriété d’un objet ?     | `setData({ ...data, champ: valeur })`   |
+| Suivre le texte dans un champ `input` ? | `useState("")` + `onChange={...}`       |
