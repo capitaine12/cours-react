@@ -1,20 +1,13 @@
-import FormuInput from "./FormInput";
 import style from "../../categorie.module.css"
 import { difficultColor } from "../../services/ColorDifficult";
-import Button from "./Button";
+import InputButton from "./InputButtom";
 
 export default function Categories(/* {onSelect, selected} */) {
-
-
-
 
     return (
         <>
             <div className={style.container}>
-                <form >
-                    <FormuInput />
-                    <Button />
-                </form>
+                <InputButton />
                 <div className={style.boxDifficult}>
                     <p>Difficulter</p> 
                     <div className={style.legende} >

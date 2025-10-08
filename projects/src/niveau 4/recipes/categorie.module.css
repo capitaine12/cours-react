@@ -1,11 +1,12 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   width: 67%;
   padding: 8px;
-  background-color: bisque;
+ 
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
 
 }
 
@@ -13,9 +14,6 @@
 
   width: 30px;
   height: 23px;
-  position: relative;
-  top: -13px;
-  left: 5px;
   clip-path: polygon(0 0, 80% 0, 80% 70%, 50% 100%, 20% 70%, 20% 0);
 
 }

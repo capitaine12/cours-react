@@ -1,9 +1,4 @@
 .custom-input {
-    padding: 5px;
-}
-
-.custom-input {
-    padding: 6px;
     border: 1px solid rgb(199, 198, 198);
     border-radius: 8px;
     background-color: rgb(240 240 240);
@@ -14,4 +9,20 @@
     outline: none;
 }
 
+.searchInput {
+    
+    border-radius: 16px 0px 0px 16px;
+    border: 2px solid black;
+    border-right: none;
+    width: 345px;
+    padding: 8px;
+    background-color: white;
 
+}
+
+.searchInput::placeholder {
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8px;
+}

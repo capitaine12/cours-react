@@ -14,6 +14,7 @@ export const Route = createBrowserRouter([
     {
         path : "/",
         element : <Layout />,
+      HydrateFallback: () => null,
         children : [
 
             { index: true, element: <Accueil />, loader: fetchRecipes},
