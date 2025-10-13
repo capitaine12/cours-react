@@ -1,18 +1,29 @@
+.container {
+    background-color: white;
+}
+
 
 .inputItems input,
 .inputItems textarea {
-    border: 3px solid rgb(255, 255, 0); 
+    border: 3px solid rgb(255, 192, 0); 
+}
+
+.inputItems textarea {
+    width: 250px;
+    border-radius: 5px;
+    
+}
+
+.inputItems textarea::placeholder {
+    vertical-align: bottom;
 }
 
 .inputItems input {
     width: 250px;
+    padding: 8px;
 }
 
-.cont {
-    font-family: "Style Script";
-    font-size: 4em;
 
-}
 
 .gridContainer {
     display: grid;
@@ -37,7 +48,7 @@
 
 .gridSocial ul {
     list-style: none;
-    background-color: rgb(225, 192, 0);
+    background-color: rgb(255, 192, 0);
     
 }
 
@@ -75,7 +86,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: white;
     list-style: none;
 }

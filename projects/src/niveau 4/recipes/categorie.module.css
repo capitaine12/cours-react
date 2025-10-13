@@ -3,7 +3,7 @@
   /* grid-template-columns: 1fr 1fr; */
   width: 67%;
   padding: 8px;
- 
+ background: center center / 180px url(./images/1.png) no-repeat;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 30px;

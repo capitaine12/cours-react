@@ -1,0 +1,28 @@
+.container {
+    background: center center / cover url(../images/newletter-bg.png) black;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* .titre {
+    color: rgb(255, 192, 0);
+} */
+
+.top {
+
+    width: 53%;
+
+}
+
+p {
+    font-size: 1.2em;
+    
+}

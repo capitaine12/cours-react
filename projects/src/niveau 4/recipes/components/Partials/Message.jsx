@@ -26,6 +26,7 @@ export default function Message({
     duration = 2000,
     onClose,
 }) {
+
     const [visible, setVisible] = useState(show)
 
     useEffect(() => {
@@ -42,7 +43,9 @@ export default function Message({
 
     return (
         <div className={`custom-msg  ${type} ${className}`}>
+            
             {icon && <span className="msg-icon">{ICONS_BY_TYPE[type]}</span>}
+            
             <strong className='custom-txt'>{children}</strong>
         </div>
     )

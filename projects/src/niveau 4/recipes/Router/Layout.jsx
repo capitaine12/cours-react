@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import style from '../styles/Layout.module.css'
+import Newletter from "../components/Newletter";
 
 export default function Layout() {
     
@@ -11,6 +12,7 @@ export default function Layout() {
             <main className="mymain">
                 <Outlet />
             </main>
+                <Newletter />
             <Footer />
         </div>
     )

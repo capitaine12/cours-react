@@ -11,6 +11,7 @@ export default function FormUser({ ajouter, modifierUser, userCurrent}) {
   const [mail, setMail] = useState("")
 
   const utilisateur = { prenom, nom, mail }
+  
  const handleModifierClick = () => {
     if (userCurrent) {
       setPrenom(userCurrent.prenom);

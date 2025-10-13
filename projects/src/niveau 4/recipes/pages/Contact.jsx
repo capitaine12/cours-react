@@ -9,6 +9,7 @@ import { SiGooglemaps } from "react-icons/si";
 import { MdLocalPhone } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaTelegram, FaTiktok } from "react-icons/fa6";
+import Titre from "../components/Partials/Titre";
 
 export default function Contact() {
 
@@ -80,7 +81,7 @@ export default function Contact() {
 
 
     return (
-        <>
+        <div className={style.container}>
 
             <Message
                 show={showMessage}
@@ -93,7 +94,7 @@ export default function Contact() {
             </Message>
 
 
-            <h1 className={style.cont}>Contactez-nous</h1>
+            <Titre label={"Contactez-nous !"} />
 
             <div className={style.gridContainer}>
                 <div className={style.gridSocial}>
@@ -145,6 +146,12 @@ export default function Contact() {
                 </div>
             </div> {/* <MdOutlineLocalDining /> */}
 
-        </>
+            <div>
+                <h2>Envoyer votre email à la bonne personne</h2>
+                <strong>Pour poser une question, nous envoyer un message, nous demander conseil, etc… envoyez-nous un email !</strong>
+                <p>En choisissant le bon destinataire, votre demande sera traitée au mieux dans les plus brefs délais.</p>
+                <p>Merci beaucoup ! </p>
+            </div>
+        </div>
     )
 }

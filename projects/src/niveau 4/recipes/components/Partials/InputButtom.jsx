@@ -1,25 +1,31 @@
-import { FiSearch } from "react-icons/fi";
 import Button from "./Button";
 import FormuInput from "./FormInput";
 
 
-export default function InputButton({handelSearch,searchrecip}) {
+export default function InputButton({type="text",value="",onChange,placeholder,label, handleClick}) {
+   
+    
+    const handleSubmit = () => {
+
+    }
+   
+   
     return (
         <>
-        <form style={{display: "flex"}}>
+        <form style={{display: "flex"}} onSubmit={handleSubmit} >
                     <FormuInput 
-                    type="search"
-                    value={searchrecip}
-                    onChange={handelSearch}
+                    type={type}
+                    value={value}
+                    onChange={onChange}
                     className="searchInput"
-                    placeholder={"Rechercher une recette..."}
+                    placeholder={placeholder}
                     />
 
                     <Button 
                     className="searchButton"
-                    label={
-                        <FiSearch />
-                    }
+                    label={label }
+                    type="submit"
+                    onClick={handleClick}
 
                     />
                 </form>
