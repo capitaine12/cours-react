@@ -8,7 +8,7 @@ export default function Card(/* {filtrer} */) {
 
    
     const data = useLoaderData()
-    let recipes = data.recipes
+    let recipes = data?.recipes || []
 
     /* if (filtrer) {
         
@@ -21,7 +21,11 @@ export default function Card(/* {filtrer} */) {
     return (
         <>
 
-            {recipes && recipes.map((recipe) => (
+            {recipes.lenght === 0 ? (
+                <p>Aucun recette trouver</p>
+
+            ) : (
+                recipes.map((recipe) => (
 
                     <Link key={recipe.id} to={`/retail/${recipe.id}`} className={style.cLink}>
 
@@ -48,6 +52,7 @@ export default function Card(/* {filtrer} */) {
                         </div >
                     </Link>
                 ))
+            )
 
             }
 

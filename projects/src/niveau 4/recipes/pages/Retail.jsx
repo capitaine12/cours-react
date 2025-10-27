@@ -15,13 +15,14 @@ export default function Retail() {
         <>
             <div
                 className={`${style.cardRetail} ${style.fadeIn}`}
-            style={{
-                "--accent": colors.accent
-            }}
-            >
+                style={{
+                    "--accent": colors.accent
+                }}>
+
                 <div className={style.close}>
                     <Link to="/"><MdCloseFullscreen /></Link>
                 </div>
+
                 <div className={style.top}>
                     <h2> {recipe.name} </h2>
                     <div className={style.topItems}>
@@ -45,6 +46,10 @@ export default function Retail() {
                     </div>
                 </div>
 
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION INGREDIENT ::::::::::::::::::::::::::::::::::::::  */}
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION INGREDIENT ::::::::::::::::::::::::::::::::::::::  */}
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION INGREDIENT ::::::::::::::::::::::::::::::::::::::  */}
+
                 <div className={style.RBody}>
                     <div className={style.ingredient}>
                         <h3>Ingrédients :</h3>
@@ -56,8 +61,12 @@ export default function Retail() {
                     {/* Divider avec couleur dynamique */}
                     <div
                         className={style.diviseur}
-                        style={{ background: useAverageColor }}
-                    ></div>
+                        style={{ background: useAverageColor }}>
+                    </div>
+                    
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION PREPARATION ::::::::::::::::::::::::::::::::::::::  */}
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION PREPARATION ::::::::::::::::::::::::::::::::::::::  */}
+{/* ::::::::::::::::::::::::::::::::::::::::: SECTION PREPARATION ::::::::::::::::::::::::::::::::::::::  */}
 
                     <div className={style.prep}>
                         <h3>Préparation :</h3>
@@ -67,8 +76,7 @@ export default function Retail() {
                                     key={index}
                                     style={{
                                         "--stepColor": useAverageColor
-                                    }}
-                                >
+                                    }}>
                                     {step}
                                 </li>
                             ))}
@@ -81,13 +89,11 @@ export default function Retail() {
                         className={style.RImage}
                         style={{
                             background: `url(${recipe.image}) center center / cover no-repeat `
-                        }}
-                    ></div>
+                        }}>
+                    </div>
 
-                    <div
-                        className={style.rightBox}
-                        style={{ background: useAverageColor }}
-                    >
+                    <div className={style.rightBox}
+                        style={{ background: useAverageColor }} >
                         <div className={style.facts}>
                             <h3>Cuisine</h3>
                             <span>{recipe.cuisine}</span>
