@@ -9,11 +9,11 @@ export function useAverageColor(imageUrl, delay = 300) {
     useEffect(() => {
         if (!imageUrl) return
 
-        let timeoutId
+        
         const fac = new FastAverageColor()
 
         // Si ça prend plus de 300ms → on montre le loader
-        timeoutId = setTimeout(() => setLoading(true), delay)
+       let timeoutId = setTimeout(() => setLoading(true), delay)
 
         fac.getColorAsync(imageUrl)
             .then(color => {
