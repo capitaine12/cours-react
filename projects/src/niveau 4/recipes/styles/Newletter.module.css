@@ -12,17 +12,16 @@
     
 }
 
-/* .titre {
-    color: rgb(255, 192, 0);
-} */
-
 .top {
 
-    width: 53%;
+    width: 55%;
 
 }
 
-p {
+.top p {
     font-size: 1.2em;
+    line-height: 1.5;
     
 }
+
+

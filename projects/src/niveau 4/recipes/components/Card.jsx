@@ -1,31 +1,20 @@
 import { CiHeart, CiStar } from 'react-icons/ci'
 import style from '../styles/Card.module.css'
-import { Link, useLoaderData } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { difficultColor } from '../services/ColorDifficult'
 
 
-export default function Card(/* {filtrer} */) {
+export default function Card({ recipes = [] }) {
 
    
-    const data = useLoaderData()
-    let recipes = data?.recipes || []
-
-    /* if (filtrer) {
-        
-        recipes = recipes.filter(
-            
-            (r) => r.difficulty === filtrer || (!r.difficulty && filtrer === 'Uncknown')
-        )
-    } */
+    if (recipes.length === 0) {
+    return <p>Aucune recette trouvée</p>;
+  }
 
     return (
         <>
 
-            {recipes.lenght === 0 ? (
-                <p>Aucun recette trouver</p>
-
-            ) : (
-                recipes.map((recipe) => (
+            {recipes.map((recipe) => (
 
                     <Link key={recipe.id} to={`/retail/${recipe.id}`} className={style.cLink}>
 
@@ -52,7 +41,7 @@ export default function Card(/* {filtrer} */) {
                         </div >
                     </Link>
                 ))
-            )
+            
 
             }
 
